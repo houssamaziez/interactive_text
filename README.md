@@ -1,39 +1,60 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+Interactive Text Flutter Package
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/tools/pub/writing-package-pages).
+A Flutter package for rendering interactive text with support for clickable phone numbers, email addresses, and URLs. This package simplifies handling these elements, enabling seamless interactions like dialing phone numbers, sending emails, or opening web links.
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/to/develop-packages).
--->
+Features
+Detects and highlights phone numbers, URLs, and email addresses within a text.
+Tap on phone numbers to initiate calls.
+Tap on email addresses to open the default mail client.
+Tap on URLs to open them in the browser.
+Fully customizable styling for interactive and non-interactive text.
+Installation
+Add the following to your pubspec.yaml file:
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+yaml
+Copier le code
+dependencies:
+  interactive_text: ^1.0.0
+Then, run:
 
-## Features
+bash
+Copier le code
+flutter pub get
+Usage
+Example
+Here is how you can use InteractiveTextScreen in your app:
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+dart
+Copier le code
+import 'package:flutter/material.dart';
+import 'package:interactive_text/interactive_text.dart';
 
-## Getting started
+void main() => runApp(const MyApp());
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
-## Usage
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(title: const Text('Interactive Text Example')),
+        body: InteractiveTextScreen(
+          description: 'Contact us at support@example.com or visit https://example.com. Call us at 0558063811!',
+        ),
+      ),
+    );
+  }
+}
+Output
+The text will render with phone numbers, email addresses, and URLs highlighted. Users can tap on them to interact directly.
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+Customization
+You can customize the TextStyle for interactive and non-interactive parts of the text by modifying the _buildTextSpan method in the widget.
 
-```dart
-const like = 'sample';
-```
+Contributions
+Contributions are welcome! Feel free to file issues, make feature requests, or submit pull requests.
 
-## Additional information
+License
+This package is licensed under the MIT License. See the LICENSE file for details.
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.

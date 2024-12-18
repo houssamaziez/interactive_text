@@ -37,7 +37,7 @@ dependencies:
   cupertino_icons: ^1.0.8
   interactive_text:
     git:
-      url: https://github.com/<your-username>/interactive_text.git
+      url: https://github.com/houssamaziez/interactive_text.git
 
 dev_dependencies:
   flutter_test:

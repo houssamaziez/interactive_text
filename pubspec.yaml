@@ -1,6 +1,9 @@
 name: interactive_text
-description: "A new Flutter package project."
-version: 0.0.1
+description: A Flutter package for rendering interactive text with support for clickable phone numbers, email addresses, and URLs.
+
+version: 0.0.3
+
+
 homepage:
 
 environment:
