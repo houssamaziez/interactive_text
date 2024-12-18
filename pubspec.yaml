@@ -1,13 +1,13 @@
 name: interactive_text_plus
 description: A Flutter package for rendering interactive text with support for clickable phone numbers, email addresses, and URLs.
 
-version: 1.1.5 
+version: 1.1.6 
 
 
 homepage:
 
 environment:
-  sdk: ^3.5.4
+  sdk: ^3.2.5
   flutter: ">=1.17.0"
 
 dependencies:

@@ -67,16 +67,4 @@ For any inquiries, feel free to contact me:
 - **Name**: Houssam Eddine Aziez
 - **Email**: houssamaziez@gmail.com
 ```
-
-### Key Sections:
-1. **Badges**: This section includes badges like version and license, which add professionalism and help users quickly identify package details.
-2. **Features**: Briefly describes what the package can do, highlighting the key functionalities.
-3. **Installation**: Instructions on how to add the package to a Flutter project.
-4. **Usage**: Provides a sample usage of the package in a Flutter app, making it easier for users to get started quickly.
-5. **Customization**: Brief note on customizing the widget or package features.
-6. **Supported Platforms**: A list of platforms supported by the package.
-7. **License**: Information about the license type, helping users understand the legal terms of using your package.
-8. **Contributing**: A section inviting users to contribute to the project with clear steps on how to do so.
-9. **Contact**: A professional way for users to get in touch.
-
-Let me know if you'd like to adjust or add anything!
+ 
